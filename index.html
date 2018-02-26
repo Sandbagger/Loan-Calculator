@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script src="https://use.fontawesome.com/02b956c77d.js"></script>
-	<script type ="text/javascript" src="index.js"></script>
+	<script type ="text/javascript" src="loanCal.js"></script>
 
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,22 +20,22 @@
 		<div class="row output">
 			<div class="col-sm-6">
 					<label>I'd like to borrow:</label>
-					<span>£</span><output type="number" name="borrow" id="borrow">
+					<span>£</span><output type="number" name="borrow" id="borrow">3000</output>
 			</div>
 			<div class="col-sm-6">
 				<label>Over a period of (months):</label>
-				<output type="number" name="month" id="month">
+				<output type="number" name="month" id="month">48</output>
 			</div>
 		</div>
 
 		<div class="row flex-column input">
 			<div class="col-sm-6">
-				<form oninput="borrow.value=parseInt(amount.value)">
-				<input type="range" min="100" max="20000" name="amount" id="amount" value='0'>
-				</form>
+				
+				<input type="range" min="100" max="10000" name="amount" id="amount" value='0'>
+			
 			</div>
 			<div class="col-sm-6">
-				<form oninput="month.value=parseInt(period.value)">
+
 				<input type="range" min="3" max="60" name="period" id="period">
 			</div>
 
@@ -43,17 +43,17 @@
 
 			<div class="col-sm-4 apr">
 				<label>Representative APR</label>
-				<input type="number" name="apr">
+				<output type="number" name="apr" id="apr">26.8</output>
 			</div>
 
 			<div class="col-sm-4 repayment">
 				<label>Monthly repayment:</label>
-				<input type="number" name="">
+				<output type="number" name="repayment" id="repayment"></output>
 			</div>
 
 			<div class="col-sm-4 total-repayment">
 				<label>Total repayment</label>
-				<input type="number" name="repayment">
+				<output type="number" name="total-repayment" id="total-repayment" ></output>
 			</div>
 		</div>
 	
