@@ -1,3 +1,14 @@
+body{
+    background-image: url(background.jpg); 
+}
+
+.container{
+    border: 0.5rem outset pink;
+    background: white;
+    margin-top: 10%;
+}
+
+
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -19,7 +30,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #009fda;
     cursor: pointer;
 }
 
@@ -27,12 +38,36 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #009fda;
     cursor: pointer;
 }
 
 .bottom-buffer { margin-bottom:15px; }
 
+.top-buffer { margin-top:15px; }
+
+.vert-center { margin-bottom:8px; }
+
 input { 
     text-align: center; 
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.rnd-btn{
+
+  border-radius: 50%;
+ 
+}
+
+.container{
+    border: 0.5rem outset pink;
+    background: ;
+    margin-top: 10%;
 }

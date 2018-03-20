@@ -12,8 +12,8 @@
 
  	var apr = document.querySelector('#apr');
 
- 	var homeSearch = document.querySelector('#home-search');
- 	var workSearch = document.querySelector('#work-search');
+ 	var homeSearch = document.querySelector('#home-postcode');
+ 	var workSearch = document.querySelector('#work-postcode');
  	var employer = document.querySelector('#employer');
  	
 
@@ -65,22 +65,29 @@ amount.addEventListener('input', function() {
 });
 
 //set listener for postcode search
-homeSearch.addEventListener('input', function(){
-	var url = "https://www.findyourcreditunion.co.uk/search?Location=" + this.value + "&EmploymentLocation=&EmploymentName=&Associations="
-	document.querySelector('#cta').setAttribute("href", url);
+     homeSearch.addEventListener('input', function () {
+         var url = "https://www.findyourcreditunion.co.uk/search?Location=" + this.value + "&EmploymentLocation=&EmploymentName=&Associations="
+         document.querySelector('#cta').setAttribute("href", url);
 
-})
+     });
 
 //set listener for postcode search
-workSearch.addEventListener('input', function(){
-	var url = "https://www.findyourcreditunion.co.uk/search?Location=&EmploymentLocation="+ this.value +"&EmploymentName=&Associations="
-	document.querySelector('#cta').setAttribute("href", url);
+     workSearch.addEventListener('input', function () {
+         var url = "https://www.findyourcreditunion.co.uk/search?Location=&EmploymentLocation=" + this.value + "&EmploymentName=&Associations="
+         document.querySelector('#cta').setAttribute("href", url);
+
+     });
 
 //set listener for postcode search
 employer.addEventListener('input', function(){
-	var url = "https://www.findyourcreditunion.co.uk/search?Location=&EmploymentLocation=&EmploymentName=&Associations="
+	var url = "https://www.findyourcreditunion.co.uk/search?Location=&EmploymentLocation=&EmploymentName="+ this.value +"&Associations="
 	document.querySelector('#cta').setAttribute("href", url);
+});
 
+//popover
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
 
 }
 
