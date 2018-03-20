@@ -30,3 +30,9 @@
     background: #4CAF50;
     cursor: pointer;
 }
+
+.bottom-buffer { margin-bottom:15px; }
+
+input { 
+    text-align: center; 
+}
