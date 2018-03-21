@@ -1,11 +1,12 @@
 body{
-    background-image: url(background.jpg); 
+    background: #4ABDAC; 
 }
 
 .container{
-    border: 0.5rem outset pink;
+    border: 0.5rem outset white;
     background: white;
-    margin-top: 10%;
+    width: 60%;
+    margin-top: 5%;
 }
 
 
@@ -66,8 +67,3 @@ input {
  
 }
 
-.container{
-    border: 0.5rem outset pink;
-    background: ;
-    margin-top: 10%;
-}
