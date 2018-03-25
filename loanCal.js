@@ -57,7 +57,7 @@ amount.addEventListener('input', function() {
 
  //set period listener
 	period.addEventListener('input', function() {
-  console.log(this.value);
+  console.log("this period of months: " + this.value);
   month.value = this.value;
   PERIOD = parseFloat(month.value);
   instalment();
