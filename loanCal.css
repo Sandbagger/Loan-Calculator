@@ -9,6 +9,9 @@ body{
     margin-top: 5%;
 }
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
 
 input[type="range"] {
     -webkit-appearance: none;
@@ -41,7 +44,11 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     background: #009fda;
     cursor: pointer;
-    margin-top: -8px;
+    margin-top: -7px;
+}
+
+input[type="range"]::-ms-thumb {
+  margin: 0; /* Reset margin in Edge since it supports -webkit-slider-thumb as well */
 }
 
 input[type="range"]::-moz-range-thumb {
