@@ -142,4 +142,7 @@ function totalRepayable(){
 	totalRepayment.value = total.toFixed(2);
 };
 
+//CSS Chrome hack for sliders
+
+var isChromium = !!window.chrome;
 
