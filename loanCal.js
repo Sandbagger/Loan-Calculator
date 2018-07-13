@@ -18,7 +18,7 @@
  	
 
 //update amount output
- 	amount.addEventListener('input', function() {
+ 	amount.addEventListener('change', function() {
   console.log(this.value);
   borrow.value = this.value;
   AMOUNT = parseFloat(this.value);
@@ -27,18 +27,18 @@
 });
 
 
-borrow.addEventListener('input', function() {
+borrow.addEventListener('change', function() {
 	amount.value = this.value;
 })
 
-	amount.addEventListener('input', function() {
+	amount.addEventListener('change', function() {
   console.log(this.value);
   borrow.value = this.value;
   AMOUNT = parseFloat(this.value);
 });
 
 //set APR listener 
-amount.addEventListener('input', function() {
+amount.addEventListener('change', function() {
 	if (this.value < 1001) {
 		apr.value = 42.6;
 
@@ -56,7 +56,7 @@ amount.addEventListener('input', function() {
 });
 
  //set period listener
-	period.addEventListener('input', function() {
+	period.addEventListener('change', function() {
   console.log("this period of months: " + this.value);
   month.value = this.value;
   PERIOD = parseFloat(month.value);
@@ -65,21 +65,21 @@ amount.addEventListener('input', function() {
 });
 
 //set listener for postcode search
-     homeSearch.addEventListener('input', function () {
+     homeSearch.addEventListener('change', function () {
          var url = "https://www.findyourcreditunion.co.uk/search?Location=" + this.value + "&EmploymentLocation=&EmploymentName=&Associations="
          document.querySelector('#cta').setAttribute("href", url);
 
      });
 
 //set listener for postcode search
-     workSearch.addEventListener('input', function () {
+     workSearch.addEventListener('change', function () {
          var url = "https://www.findyourcreditunion.co.uk/search?Location=&EmploymentLocation=" + this.value + "&EmploymentName=&Associations="
          document.querySelector('#cta').setAttribute("href", url);
 
      });
 
 //set listener for postcode search
-employer.addEventListener('input', function(){
+employer.addEventListener('change', function(){
 	var url = "https://www.findyourcreditunion.co.uk/search?Location=&EmploymentLocation=&EmploymentName="+ this.value +"&Associations="
 	document.querySelector('#cta').setAttribute("href", url);
 });
